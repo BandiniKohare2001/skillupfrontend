@@ -1,0 +1,51 @@
+/* App.css */
+.registration-page{
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+input[type='file'] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+}
+
+.btn-reg {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    background-color: green;
+    border: none;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.logo {
+    height: 100px;
+    display: block;
+    margin: auto auto;
+    filter: drop-shadow(1px 2px 1px gray);
+}
+
+.form {
+    display: block;
+    margin: auto auto;
+    width: 550px;
+    /* border: 1px solid gray; */
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 1px 0px 20px 1px gray; */
+
+}
+
+.reg-hea {
+    text-align: center;
+}
