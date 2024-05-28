@@ -1,0 +1,36 @@
+.profile-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.name-details{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post-card-container{
+    height: fit-content;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}
+.post-box{
+    height: fit-content;
+    border-radius: 15px;
+    border: 1.5px solid rgb(239, 237, 237);
+}
+.post-text{
+    font-size: 10px;
+    color: rgb(132, 132, 132);
+    margin-top: -15px;
+}
+.post-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

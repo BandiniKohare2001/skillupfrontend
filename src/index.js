@@ -8,6 +8,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Registration from './pages/Registration/Registration';
 import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
+import Notification from './pages/Notification/Notification';
+import Connections from './pages/Connections/Connections';
+import Message from './pages/Message/Message';
+import Profile from './pages/Profile/Profile';
+import GetPremium from './pages/GetPremium/GetPremium';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +26,26 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>
+  },
+  {
+    path: "/notification",
+    element: <Notification/>
+  },
+  {
+    path: "/connections",
+    element: <Connections/>
+  },
+  {
+    path: "/message",
+    element: <Message/>
+  },
+  {
+    path: "/userprofile",
+    element: <Profile/>
+  },
+  {
+    path: "/premium",
+    element: <GetPremium/>
   },
 ]);
 
