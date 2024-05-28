@@ -24,7 +24,6 @@ input[type='file'] {
     background-color: green;
     border: none;
     width: 100%;
-
     cursor: pointer;
 }
 
@@ -32,7 +31,7 @@ input[type='file'] {
     height: 100px;
     display: block;
     margin: auto auto;
-    filter: drop-shadow(1px 2px 1px gray);
+    /* filter: drop-shadow(1px 2px 1px gray); */
 }
 
 .form {
@@ -45,7 +44,7 @@ input[type='file'] {
     /* box-shadow: 1px 0px 20px 1px gray; */
 
 }
-
 .reg-hea {
     text-align: center;
 }
+        

@@ -1,0 +1,86 @@
+
+.nav-section {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .web-logo {
+    height: 40px;
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .search-input {
+    transition: border-color 0.3s ease-in-out;
+    background-color: #edf3f8;
+    border: none;
+    height: 40px;
+  font-size: 15px;
+    padding-right: 40px; /* Add padding to avoid overlap with the icon */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-with-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-icon {
+    font-size: 28px;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .icon-label {
+    font-size: 15px;
+    color: #555;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  
+  .nav-icon:hover, .icon-label:hover {
+    color: #000;
+  }
+  
+  .get-premium {
+    font-weight: bold;
+    cursor: pointer;
+    color: orange;
+  }
+  
+  /* .icon-with-label.active .nav-icon, */
+  .icon-with-label.active .icon-label {
+    color: #000;
+    border-bottom: 2px solid #060606;
+   
+  }
+  
+  .icon-with-label.active {
+    border-bottom: 2px solid #000;
+  }
+  
+.separator {
+    height: 40px;
+    width: 1px;
+    background-color: #999;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
