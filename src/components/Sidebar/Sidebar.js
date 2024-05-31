@@ -9,7 +9,8 @@ import GroupIcon from '@mui/icons-material/Group';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
 import './Sidebr.css';
-import logo from "./../../utils/images/Logo.png"
+import logo from './../../utils/images/Logo.png';
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,60 +24,60 @@ const Sidebar = () => {
   };
 
   return (
-    <>
-      <div className="container-fluid mt-3">
-        <nav className="navbar navbar-expand-lg navbar-light ">
-          <div className="container-fluid p-2">
-            <div onClick={ToggleSidebar}>
-              <MenuIcon className="menu-btn" />
-            </div>
-          </div>
-        </nav>
-        <div className={`sidebar ${isOpen ? 'active' : ''}`}>
-          <div className="sd-header pt-4">
-            <img src={logo} alt='logo' className='logo-sidebar'/>
-            <div className="btn" onClick={ToggleSidebar}>
-              <CloseIcon className="close-btn" />
-            </div>
-          </div>
-          <div className="sd-body">
-            <ul>
-              <li>
-                <Link to="#" className="mb-0 sd-link">
-                  <PersonIcon className="icon" /> User Name
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="sd-link">
-                  <PostAddIcon className="icon" /> Posts
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="sd-link">
-                  <SchoolIcon className="icon" /> Course
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="sd-link">
-                  <GroupIcon className="icon" /> Groups
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="sd-link">
-                  <HelpOutlineIcon className="icon" /> Doubts
-                </Link>
-              </li>
-              <li>
-                <div className="sd-link logout" onClick={handleLogout}>
-                  <LogoutIcon className="icon" /> Logout
-                </div>
-              </li>
-            </ul>
+   <div className='sidebr'>
+     <div className={`sidebar-container ${isOpen ? 'sidebar-open' : ''}`}>
+      <nav className="navbar navbar-expand-lg navbar-light ">
+        <div className="container-fluid p-2">
+          <div onClick={ToggleSidebar}>
+            <MenuIcon className="menu-btn" />
           </div>
         </div>
-        <div className={`sidebar-overlay ${isOpen ? 'active' : ''}`} onClick={ToggleSidebar}></div>
+      </nav>
+      <div className={`sidebar ${isOpen ? 'active' : ''}`}>
+        <div className="sd-header pt-4">
+          <img src={logo} alt='logo' className='logo-sidebar'/>
+          <div className="btn" onClick={ToggleSidebar}>
+            <CloseIcon className="close-btn" />
+          </div>
+        </div>
+        <div className="sd-body">
+          <ul>
+            <li>
+              <Link to="/userprofile" className="mb-0 sd-link">
+                <PersonIcon className="icon" /> User Name
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="sd-link">
+                <PostAddIcon className="icon" /> Posts
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="sd-link">
+                <SchoolIcon className="icon" /> Course
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="sd-link">
+                <GroupIcon className="icon" /> Groups
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="sd-link">
+                <HelpOutlineIcon className="icon" /> Doubts
+              </Link>
+            </li>
+            <li>
+              <div className="sd-link logout" onClick={handleLogout}>
+                <LogoutIcon className="icon" /> Logout
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </>
+      <div className={`sidebar-overlay ${isOpen ? 'active' : ''}`} onClick={ToggleSidebar}></div>
+    </div>
+   </div>
   );
 };
 

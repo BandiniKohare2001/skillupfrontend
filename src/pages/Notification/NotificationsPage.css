@@ -1,0 +1,47 @@
+/* NotificationsPage.css */
+
+.notifications-page {
+    padding: 20px;
+  }
+  
+  .notifications-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .notification-item.read {
+    background-color: #f0f0f0;
+  }
+  
+  .notification-item img.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .notification-text {
+    flex-grow: 1;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+  }
+  
+  .sidebar-open .main-content {
+    margin-left: 17%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar-open .main-content {
+      margin-left: 75%;
+    }
+  }
+  

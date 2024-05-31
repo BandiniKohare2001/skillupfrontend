@@ -17,11 +17,12 @@ const PostCard = () => {
   };
 
   return (
-    <div className="post-card-container">
+    <div className="">
+    <div className="profile-container">
       {userPosts.map((obj, index) => {
         const { name, desc, post, profile, postImg } = obj;
         return (
-          <div className="post-box my-3" key={index}>
+          <div className="post-box my-2" key={index}>
             <div className="details d-flex p-3">
               <div className="img">
                 <img src={profile} alt="" className="profile-img" />
@@ -33,10 +34,10 @@ const PostCard = () => {
                 </Typography>
               </div>
             </div>
-            <div className="para px-3">
-              <Typography variant="body1">{desc}</Typography>
+            <div className="para px-3 ">
+              <Typography variant="body1" ><span className="fs">{desc}</span></Typography>
             </div>
-            <img src={postImg} className="post-img mt-3" alt="Post" /><hr/>
+            <img src={postImg} className="post-img mt-3" alt="Post" />
             <div className="actions d-flex justify-content-around p-1">
               <IconButton
                 color={likes[index] ? "secondary" : "default"}
@@ -54,7 +55,7 @@ const PostCard = () => {
           </div>
         );
       })}
-    </div>
+    </div></div>  
   );
 };
 

@@ -1,0 +1,29 @@
+.notification-page {
+  padding: 20px;
+}
+
+.notification-page h2 {
+  margin-bottom: 20px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.notification-item.read {
+  background-color: #f0f0f0;
+}
+
+.notification-item img.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notification-text {
+  flex-grow: 1;
+}

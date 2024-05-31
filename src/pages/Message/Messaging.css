@@ -1,0 +1,44 @@
+.messaging-container {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust based on your navbar and sidebar height */
+
+  /* transition: margin-left 0.5s; */
+}
+
+.messaging-container.sidebar-open {
+  margin-left: 0;
+}
+
+.users-list-container {
+  width: 300px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+.message-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.no-user-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+.menu-icon-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}

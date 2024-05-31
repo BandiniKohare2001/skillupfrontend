@@ -1,92 +1,199 @@
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Make navbar fixed */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
 .nav-section {
-    background-color: #fff;
-   display: flex;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.web-logo {
+  height: 35px;
+  margin-left: 10px;
+}
+
+.search-container {
+  flex-grow: 1;
+  max-width: 400px;
+  position: relative;
+}
+.sideb{
+  /* background-color: aqua; */
+  /* margin-top: -50px; */
+}
+
+.search-input {
+  transition: border-color 0.3s ease-in-out;
+  background-color: #edf3f8;
+  border: none;
+  height: 35px;
+  font-size: 15px;
+  /* margin-left: 20px; */
+  padding-right: 40px; /* Add padding to avoid overlap with the icon */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  transform: translateY(-50%);
+  color: #999;
+}
+.icons-container{
+  display: none;
+}
+.icons-containert {
+  display: flex;
+  margin-left: 3%;
+  height: 40px;
+  align-items: center;
+}
+
+.icon-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 5px; /* Added padding for better click area */
+}
+
+.nav-icon {
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon-label {
+  font-size: 10px;
+  color: #555;
+}
+
+.nav-icon:hover,
+.icon-label:hover {
+  color: #000;
+}
+
+.get-premium {
+  font-weight: bold;
+  cursor: pointer;
+  color: orange;
+}
+
+.icon-with-label.active {
+  border-bottom: 2px solid black; /* Added border-bottom for underline effect */
+}
+
+.separator {
+  height: 40px;
+  width: 1px;
+  background-color: #e4e4e4;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.content {
+  padding-top: 70px; /* Add padding to prevent content overlap with fixed navbar */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-section {
+    flex-direction: row;
+    align-items: start;
   }
-  .nav-main{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  .search-container {
+    /* max-width: 100%; */
+    padding-right: -50px;
   }
   .web-logo {
     height: 35px;
+  margin-right: 50px;
+  padding-left: 10px;
+    width: 100%;
   }
-  
-  .search-container {
-    flex-grow: 1;
-    max-width: 400px;
-    position: relative;
+  .menu-logo{
+    margin-left: -55px; 
+    margin-right: 40px;
   }
-  
-  .search-input {
-    transition: border-color 0.3s ease-in-out;
-    background-color: #edf3f8;
-    border: none;
-    height: 35px;
-  font-size: 15px;
-  margin-left: 20px;
-    padding-right: 40px; /* Add padding to avoid overlap with the icon */
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-  }
-  
+
   .icons-container {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
-  
+  .icon-with-label.active {
+    border-bottom: 2px solid #050505; /* Added border-bottom for underline effect */
+  }
+
   .icon-with-label {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
   }
-  
-  .nav-icon {
-    font-size: 28px;
-    color: #555;
-    transition: color 0.3s;
-  }
-  
+.search-input{
+/* padding-right: -100px; */
+}
   .icon-label {
-    font-size: 10px;
-    color: #555;
-    padding-left: 11px;
-    padding-right: 11px;
+    display: none;
   }
-  
-  .nav-icon:hover, .icon-label:hover {
-    color: #000;
+
+  .nav-main {
+    top: 0;
   }
-  
+
+  .search-container {
+    display: flex;
+    justify-content: start;
+  }
+.search-icon{
+  padding-top: 10px;
+  padding-right: -50px;
+}
+  .icons-container {
+    display: flex;
+   justify-content: space-evenly;
+    height: 60px;
+    border-top: 1px solid #eaeaea;
+    background-color: #fff;
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .icon-with-label {
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  .search-container {
+    /* margin: 10px 0; */
+    width: 100%;
+  }
+
   .get-premium {
-    font-weight: bold;
-    cursor: pointer;
-    color: orange;
+    display: none;
+  }
+  .icons-containert {
+    display: none;
+    align-items: center;
+  }
+  .search-icon{
+    padding-right: 20px;
   }
   
-  /* .icon-with-label.active .nav-icon, */
-  .icon-with-label.active .icon-label {
-    color: #000;
-    border-bottom: 2px solid #060606;
-   
-  }
-  
-  .icon-with-label.active {
-    border-bottom: 2px solid #000;
-  }
-  
-.separator {
-    height: 40px;
-    width: 1px;
-    background-color: #999;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
+}

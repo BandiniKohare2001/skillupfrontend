@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 
 code {
@@ -22,3 +22,18 @@ code {
 label{
   font-weight: bold;
 }
+.bg{
+  background-color: #f4f2ee;
+  /* height: 100vh; */
+  /* flex-grow: 1; */
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.margin{
+
+  /* flex-grow: unset; */
+  
+}
+/* .header-height{
+  height:5%;
+} */

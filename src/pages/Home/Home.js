@@ -6,13 +6,17 @@ import PostCard from '../../components/PostCard/PostCard'
 
 function Home() {
   return (
-    <div>
-      <Navbar/>
-      <Sidebar/>
+   <>
+    <div className='bg margin'>
+     <div className='header-height'>
+     <Navbar/>
+      {/* <Sidebar/> */}
+     </div>
       <section>
 <PostCard/>
       </section>
     </div>
+   </>
   )
 }
 

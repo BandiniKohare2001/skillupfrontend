@@ -1,0 +1,17 @@
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #0077b5;
+    color: white;
+  }
+  
+  .back-icon {
+    cursor: pointer;
+  }
+  
+  .user-name {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,31 @@
+.message-item {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .my-message .message-content {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .their-message .message-content {
+    background-color: #fff;
+  }
+  
+  .message-content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-text {
+    margin: 0;
+  }
+  
+  .message-timestamp {
+    font-size: 0.75em;
+    color: #999;
+    text-align: right;
+  }
+  

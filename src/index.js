@@ -13,6 +13,7 @@ import Connections from './pages/Connections/Connections';
 import Message from './pages/Message/Message';
 import Profile from './pages/Profile/Profile';
 import GetPremium from './pages/GetPremium/GetPremium';
+import NotificationPage from './pages/Notification/NotificationPage';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/notification",
-    element: <Notification/>
+    element: <NotificationPage/>
   },
   {
     path: "/connections",
