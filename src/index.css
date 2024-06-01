@@ -23,7 +23,7 @@ label{
   font-weight: bold;
 }
 .bg{
-  background-color: #f4f2ee;
+  background-color: rgb(249, 246, 246);
   /* height: 100vh; */
   /* flex-grow: 1; */
   padding-bottom: 50px;
@@ -37,3 +37,18 @@ label{
 /* .header-height{
   height:5%;
 } */
+.sec{
+  display: flex;
+ justify-content: center;
+ margin-top: 70px;
+ flex-wrap: wrap;
+ width: 100%;
+ margin-right: 100px;
+
+}
+.profile-container {
+  max-width: 700px;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 40px;
+}

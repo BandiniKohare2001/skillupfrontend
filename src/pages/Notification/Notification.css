@@ -1,5 +1,5 @@
 .notification-page {
-  padding: 20px;
+  padding: 10px;
 }
 
 .notification-page h2 {
@@ -9,8 +9,8 @@
 .notification-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #eaeaea;
+  /* padding: 10px; */
+  border-bottom: 1px solid #cac7c7;
 }
 
 .notification-item.read {

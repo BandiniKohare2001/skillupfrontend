@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Connections.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import Footer from '../../components/Footer/Footer';
 
 const connectionsData = [
   { id: 1, name: 'John Doe', position: 'Software Engineer', company: 'ABC Corp' },
@@ -59,9 +60,9 @@ const Connections = () => {
     <div className='bg'>
       <Navbar />
       {/* <Sidebar /> */}
-      <section>
+      <section className='sec'>
       <div className="profile-container">
-        <div className="connections-page container mx-auto p-4">
+        <div className="connections-page container mx-auto px-4">
           <div className="header mb-4">
             <div className="search-bar mt-2">
               <input
@@ -151,6 +152,7 @@ const Connections = () => {
           </div>
         </div>
         </div>
+      <div><Footer/></div>
       </section>
     </div>
   );

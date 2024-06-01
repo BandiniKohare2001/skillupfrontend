@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
-import Sidebar from '../../components/Sidebar/Sidebar'
+
 import PostCard from '../../components/PostCard/PostCard'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -12,8 +13,9 @@ function Home() {
      <Navbar/>
       {/* <Sidebar/> */}
      </div>
-      <section>
-<PostCard/>
+      <section className='sec'> 
+<div><PostCard/></div>
+<div><Footer/></div>
       </section>
     </div>
    </>

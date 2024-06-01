@@ -10,7 +10,7 @@
 }
 
 .users-list-container {
-  width: 300px;
+  width: 330px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
 }

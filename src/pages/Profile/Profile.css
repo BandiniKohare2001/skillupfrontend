@@ -1,78 +1,103 @@
 /* src/components/Profile.css */
-.profile-container {
-    max-width: 700px;
-    margin: 70px auto;
-    padding: 20px;
-    background-color: white;
-  }
-  
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h1 {
+  margin: 0;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.profile-content h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.experience-item p {
+  margin: 5px 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.verified {
+  color: green;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
   .profile-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
   }
-  
-  .profile-details {
-    flex: 1;
-  }
-  
+
   .profile-details h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  .profile-details p {
-    margin: 5px 0;
-    color: #666;
-  }
-  
-  .profile-content h2 {
-    margin-top: 20px;
     font-size: 1.5em;
   }
-  
-  .experience-item {
-    margin-bottom: 20px;
-  }
-  
-  .experience-item h3 {
-    margin: 0;
+
+  .profile-content h2 {
     font-size: 1.2em;
   }
-  
-  .experience-item p {
-    margin: 5px 0;
+
+  .experience-item h3 {
+    font-size: 1em;
   }
-  
-  @media (max-width: 600px) {
-    .profile-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .profile-image {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 10px;
-    }
-  
-    .profile-details h1 {
-      font-size: 1.5em;
-    }
-  
-    .profile-content h2 {
-      font-size: 1.2em;
-    }
-  
-    .experience-item h3 {
-      font-size: 1em;
-    }
-  }
-  
+}

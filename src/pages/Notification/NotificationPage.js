@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../../components/Navbar/Navbar';
-import Sidebar from '../../components/Sidebar/Sidebar';
+
 import './NotificationsPage.css';
+import Footer from '../../components/Footer/Footer';
 
 const NotificationsPage = () => {
   const [notifications, setNotifications] = useState([]);
@@ -25,10 +26,11 @@ const NotificationsPage = () => {
    <div className='bg'>
     <Navbar/>
 
-    <section className="main-content">
+   <section className='sec'> 
+   <div className="main-content">
     <div className="profile-container">
       <div className="notifications-page">
-        <h2>Notifications</h2>
+        {/* <h2>Notifications</h2> */}
         <div className="notifications-list">
           {notifications.length > 0 ? (
             notifications.map(notification => (
@@ -45,7 +47,8 @@ const NotificationsPage = () => {
         </div>
       </div>
       </div>
-    </section>
+    </div>
+    <div><Footer/></div></section>
    </div>
    </>
   );
