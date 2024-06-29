@@ -1,0 +1,37 @@
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+
+
+
+}
+
+.action-button {
+    text-align: start;
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.action-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container-Syllabus {
+    background-color: white;
+    width: 50%;
+
+}
+
+.view-course-page {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    flex-wrap: wrap;
+    margin-left: 23%;
+}

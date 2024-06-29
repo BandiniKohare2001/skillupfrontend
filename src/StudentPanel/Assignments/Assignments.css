@@ -1,0 +1,33 @@
+.assignments-card, .comm-card {
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffe6ff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignment-item {
+    margin-bottom: 10px;
+  }
+  
+  .comm-card .MuiTypography-root {
+    margin-bottom: 10px;
+  }
+  
+  .comm-card .MuiTextField-root, .assignments-card .MuiTextField-root {
+    margin-top: 10px;
+  }
+  
+  .comm-card .MuiButton-root, .assignments-card .MuiButton-root {
+    margin-top: 10px;
+  }
+  
+  .comm-card {
+    background-color: #fffae6 !important;
+  }
+  
+  .scrollable-list {
+    max-height: 300px; /* Set specific height */
+    overflow-y: auto;
+  }
+  

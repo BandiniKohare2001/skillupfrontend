@@ -14,6 +14,15 @@ import Message from './pages/Message/Message';
 import Profile from './pages/Profile/Profile';
 import GetPremium from './pages/GetPremium/GetPremium';
 import NotificationPage from './pages/Notification/NotificationPage';
+import Course from './TeacherPanel/Course/Course';
+import MyPosts from './pages/MyPosts/MyPosts';
+import DoubtPage from './pages/DoubtPage/DoubtPage';
+import GroupPage from './pages/GroupPage/GroupPage';
+import CourseDetails from './TeacherPanel/ViewCourse/CourseDetails';
+import StudentManagement from './TeacherPanel/StudentManagement/StudentManagement';
+import StudentPanel from './StudentPanel/StudentPanel';
+
+
 
 const router = createBrowserRouter([
   {
@@ -48,6 +57,38 @@ const router = createBrowserRouter([
     path: "/premium",
     element: <GetPremium/>
   },
+  {
+    path: "/course",
+    element: <Course/>
+  },
+  {
+    path: "/myposts",
+    element: <MyPosts/>
+  },
+  {
+    path: "/doubtpage",
+    element: <DoubtPage/>
+  },
+  {
+    path: "/groups",
+    element: <GroupPage/>
+  },
+  {
+    path: "/viewcourse",
+    element: <CourseDetails/>
+  },
+  {
+    path: "/studentmanagement",
+    element: <StudentManagement/>
+  },
+  {
+    path: "/studentpanel",
+    element: <StudentPanel/>
+  },
+  // {
+  //   path: "/groups",
+  //   element: <GroupPage/>
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

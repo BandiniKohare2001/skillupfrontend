@@ -1,0 +1,21 @@
+.dashboard {
+    padding: 20px;
+    
+  }
+  
+  .dashboard-card2 {
+    background-color: #c6ffb3 !important;
+  }
+  .dashboard-card1{
+    background-color:  #cce0ff !important;
+  }
+  .overview-item, .activity-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .overview-icon {
+    margin-right: 10px;
+  }
+  

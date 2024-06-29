@@ -24,8 +24,8 @@ label{
 }
 .bg{
   background-color: rgb(249, 246, 246);
-  /* height: 100vh; */
-  /* flex-grow: 1; */
+  /* height: 100vh !important; */
+  flex-grow: 1;
   padding-bottom: 50px;
   padding-top: 20px;
 }
@@ -40,7 +40,7 @@ label{
 .sec{
   display: flex;
  justify-content: center;
- margin-top: 70px;
+ margin-top: 60px;
  flex-wrap: wrap;
  width: 100%;
  margin-right: 100px;
@@ -49,6 +49,7 @@ label{
 .profile-container {
   max-width: 700px;
   padding: 20px;
+  /* height: 100vh !important; */
   background-color: white;
   margin-bottom: 40px;
 }

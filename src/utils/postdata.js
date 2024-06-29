@@ -1,14 +1,6 @@
 
 const Posts = [
-    {
-      id: 1,
-      desc: "I stayed at Narayana Girls PG hostel while preparing for competitive exams in Jaipur. The caring staff provided a safe, supportive environment that felt like home. The hostel had premium facilities like air conditioning, high-speed internet, etc which aided my studies.",
-      name: "Pooja Sharma",
-      profile:
-        "https://img-mm.manoramaonline.com/content/dam/mm/ml/travel/travel-india/images/2018/2/27/solo-trip-women.jpg.image.845.440.jpg",
-      post: "UPSC Aspirant",
-      postImg:"https://media.licdn.com/dms/image/D5622AQH90MqIeF8SKw/feedshare-shrink_800/0/1716458887809?e=1720051200&v=beta&t=YDx4eguVBPlb6Gfb1Tp06rztoZ9rctyHFt-nHFbBIr0"
-    },
+  
     {
       id: 2,
       desc: "As an engineering student, Narayana Luxury Hostel near my college enhanced my overall student experience. The rooms had great amenities and the recreation lounge provided a nice space to relax. I loved bonding with other residents over games, movies and conversations.",

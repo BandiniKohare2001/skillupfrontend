@@ -1,7 +1,7 @@
 /* Sidebar.css */
 
 .logo-sidebar {
-  height: 40px;
+  height: 55px;
 }
 
 .navbar {
@@ -20,7 +20,7 @@
 }
 
 .sidebar {
-  width: 17%;
+  width: 20%;
   height: 100vh;
   box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
   background-color: white;
@@ -33,11 +33,11 @@
 
 .menu-btn {
   height: 20px;
-  margin-right: 40px;
+  margin-right: 50px;
   cursor: pointer;
   color: black;
   position: fixed;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .sidebar.active {
@@ -101,18 +101,22 @@
 
 .close-btn {
   height: 20px;
+  margin-top: -10px;
   font-size: 24px;
 }
 
 .sd-body ul li .sd-link:hover {
   background-color: #475f7b;
   color: white;
+  
 }
 
 .logout {
   position: absolute;
   bottom: 20px;
+  
   width: 100%;
+ 
 }
 
 @media screen and (max-width: 768px) {

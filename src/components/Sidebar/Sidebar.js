@@ -42,35 +42,40 @@ const Sidebar = () => {
         </div>
         <div className="sd-body">
           <ul>
+          <li>
+              <Link to="/studentpanel" className="mb-0 sd-link">
+                <PersonIcon className="icon" />Student Panel
+              </Link>
+            </li>
             <li>
               <Link to="/userprofile" className="mb-0 sd-link">
                 <PersonIcon className="icon" /> User Name
               </Link>
             </li>
             <li>
-              <Link to="#" className="sd-link">
+              <Link to="/myposts" className="sd-link">
                 <PostAddIcon className="icon" /> Posts
               </Link>
             </li>
             <li>
-              <Link to="#" className="sd-link">
+              <Link to="/course" className="sd-link">
                 <SchoolIcon className="icon" /> Course
               </Link>
             </li>
             <li>
-              <Link to="#" className="sd-link">
+              <Link to="/groups" className="sd-link">
                 <GroupIcon className="icon" /> Groups
               </Link>
             </li>
             <li>
-              <Link to="#" className="sd-link">
+              <Link to="/doubtpage" className="sd-link">
                 <HelpOutlineIcon className="icon" /> Doubts
               </Link>
             </li>
             <li>
-              <div className="sd-link logout" onClick={handleLogout}>
+              <Link to="/login"><div className="sd-link logout" onClick={handleLogout}>
                 <LogoutIcon className="icon" /> Logout
-              </div>
+              </div></Link>
             </li>
           </ul>
         </div>

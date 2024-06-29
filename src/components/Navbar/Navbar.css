@@ -7,6 +7,7 @@
   position: fixed; /* Make navbar fixed */
   top: 0;
   width: 100%;
+  margin-left: -20px;
   z-index: 1000;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .web-logo {
-  height: 35px;
+  height: 55px;
   margin-left: 10px;
 }
 
@@ -121,9 +122,10 @@
     padding-right: -50px;
   }
   .web-logo {
-    height: 35px;
-  margin-right: 50px;
+    height: 45px;
+  margin-right: 100px;
   padding-left: 10px;
+  margin-top: 3px;
     width: 100%;
   }
   .menu-logo{
@@ -160,7 +162,8 @@
     justify-content: start;
   }
 .search-icon{
-  padding-top: 10px;
+  padding-top: 15px;
+  right: 0%;
   padding-right: -50px;
 }
   .icons-container {
