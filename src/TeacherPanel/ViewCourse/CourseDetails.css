@@ -1,12 +1,10 @@
+/* General styles */
 .action-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     width: 100%;
-
-
-
 }
 
 .action-button {
@@ -15,6 +13,8 @@
     font-size: 15px;
     font-weight: 300;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .action-button:hover {
@@ -25,7 +25,6 @@
 .container-Syllabus {
     background-color: white;
     width: 50%;
-
 }
 
 .view-course-page {
@@ -34,4 +33,101 @@
     margin-left: auto;
     flex-wrap: wrap;
     margin-left: 23%;
+}
+.btn-view-course{
+    display: flex;
+    justify-content: space-between !important;
+    
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .action-button {
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .action-button .me-3 {
+        margin-right: 0;
+    }
+
+    .container-Syllabus {
+        width: 100%;
+    }
+
+    .view-course-page {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* General styles */
+.action-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+.action-button {
+    text-align: start;
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.action-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container-Syllabus {
+    background-color: white;
+    width: 50%;
+}
+
+.view-course-page {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    flex-wrap: wrap;
+    margin-left: 23%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .action-buttons {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: flex-start;
+    }
+
+    .action-button {
+        font-size: 0;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .action-button .me-3 {
+        margin-right: 0;
+    }
+
+    .container-Syllabus {
+        width: 100%;
+    }
+
+    .view-course-page {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-feature{
+        height: 20px;
+    }
 }

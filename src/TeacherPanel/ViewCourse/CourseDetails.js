@@ -43,12 +43,7 @@ function CourseDetails() {
     setRecording('');
   };
 
-  const handleStartLiveClass = () => {
-    console.log("Live class started");
-    setSyllabusItems([...syllabusItems, { type: 'Live Class', content: 'Live class started' }]);
-    setShowLiveClassPopup(false);
-  };
-
+ 
   const handleSetReminder = () => {
     console.log("Reminder set:", reminder);
     setSyllabusItems([...syllabusItems, { type: 'Reminder', content: reminder }]);
@@ -81,24 +76,21 @@ function CourseDetails() {
           <div className='view-course-page'>
             <div className='features-container'>
               <div className="action-buttons p-3">
-                <button className="action-button mx-3" onClick={() => setShowNotesPopup(true)}>
-                  <AddCircle className='me-3'/>
+                <button className="action-button mx-1" onClick={() => setShowNotesPopup(true)}>
+                  <AddCircle className='icon-feature'/>
                   Add Notes
                 </button>
-                <button className="action-button mx-3" onClick={() => setShowAssignmentPopup(true)}>
-                  <Assignment className='me-3' />
+                <button className="action-button mx-1" onClick={() => setShowAssignmentPopup(true)}>
+                  <Assignment className='icon-feature' />
                   Add Assignment
                 </button>
-                <button className="action-button mx-3" onClick={() => setShowRecordingPopup(true)}>
-                  <RecordVoiceOver className='me-3' />
+                <button className="action-button mx-1" onClick={() => setShowRecordingPopup(true)}>
+                  <RecordVoiceOver className='icon-feature' />
                   Add Recording Class
                 </button>
-                <button className="action-button mx-3" onClick={() => setShowLiveClassPopup(true)}>
-                  <LiveTv className='me-3'/>
-                  Start Live Class
-                </button>
-                <button className="action-button mx-3" onClick={() => setShowReminderPopup(true)}>
-                  <Notifications className='me-3' />
+              
+                <button className="action-button mx-1" onClick={() => setShowReminderPopup(true)}>
+                  <Notifications className='icon-feature' />
                   Set Reminder
                 </button>
               </div>
@@ -122,8 +114,9 @@ function CourseDetails() {
           <div className="popup-inner">
             <h3>Add Notes</h3>
             <textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Enter your notes"></textarea>
-            <button className='button' onClick={handleSaveNotes}>Save</button>
-            <button className='button' onClick={() => setShowNotesPopup(false)}>Close</button>
+            <div className='btn-view-course'>
+              <div><button className='button me-5' onClick={handleSaveNotes}>Save</button></div>
+           <div className='ms-5'> <button className='button' onClick={() => setShowNotesPopup(false)}>Close</button></div></div>
           </div>
         </div>
       )}
@@ -150,15 +143,7 @@ function CourseDetails() {
         </div>
       )}
 
-      {showLiveClassPopup && (
-        <div className="popup">
-          <div className="popup-inner">
-            <h3>Start Live Class</h3>
-            <button className='button' onClick={handleStartLiveClass}>Start</button>
-            <button className='button' onClick={() => setShowLiveClassPopup(false)}>Close</button>
-          </div>
-        </div>
-      )}
+   
 
       {showReminderPopup && (
         <div className="popup">
