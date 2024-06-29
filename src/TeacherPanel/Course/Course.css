@@ -1,3 +1,4 @@
+/* General styles */
 .card-title {
   margin: 0;
   font-size: 20px;
@@ -92,7 +93,8 @@
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.status-inputbox{
+
+.status-inputbox {
   align-items: start;
   display: flex;
   justify-content: flex-start;
@@ -114,7 +116,6 @@
 
 .checkbox-container {
   margin-bottom: 10px;
- 
 }
 
 .popup-buttons {
@@ -133,4 +134,53 @@
 
 .popup-buttons button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .cards {
+    gap: 10px;
+  }
+
+  .add-course-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .c-card-details {
+    font-size: 8px;
+  }
+
+  .popup-inner {
+    width: 90%;
+  }
+
+  .popup-inner input,
+  .popup-inner select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .popup-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .status {
+    padding: 3px 5px;
+  }
 }

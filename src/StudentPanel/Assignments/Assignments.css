@@ -1,4 +1,4 @@
-.assignments-card, .comm-card {
+/* .assignments-card, .comm-card {
     height: 400px;
     margin: 20px;
     padding: 20px;
@@ -27,7 +27,7 @@
   }
   
   .scrollable-list {
-    max-height: 300px; /* Set specific height */
+    max-height: 300px; 
     overflow-y: auto;
   }
-  
+   */
