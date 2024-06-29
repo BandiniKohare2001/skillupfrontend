@@ -76,20 +76,20 @@ function CourseDetails() {
           <div className='view-course-page'>
             <div className='features-container'>
               <div className="action-buttons p-3">
-                <button className="action-button mx-1" onClick={() => setShowNotesPopup(true)}>
+                <button className="action-button " onClick={() => setShowNotesPopup(true)}>
                   <AddCircle className='icon-feature'/>
                   Add Notes
                 </button>
-                <button className="action-button mx-1" onClick={() => setShowAssignmentPopup(true)}>
+                <button className="action-button " onClick={() => setShowAssignmentPopup(true)}>
                   <Assignment className='icon-feature' />
                   Add Assignment
                 </button>
-                <button className="action-button mx-1" onClick={() => setShowRecordingPopup(true)}>
+                <button className="action-button" onClick={() => setShowRecordingPopup(true)}>
                   <RecordVoiceOver className='icon-feature' />
                   Add Recording Class
                 </button>
               
-                <button className="action-button mx-1" onClick={() => setShowReminderPopup(true)}>
+                <button className="action-button" onClick={() => setShowReminderPopup(true)}>
                   <Notifications className='icon-feature' />
                   Set Reminder
                 </button>

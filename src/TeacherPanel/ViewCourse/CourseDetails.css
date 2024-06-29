@@ -111,6 +111,7 @@
     .action-button {
         font-size: 0;
         height: 40px;
+        width: 50px;
         padding: 5px;
     }
 
@@ -128,6 +129,6 @@
         align-items: center;
     }
     .icon-feature{
-        height: 20px;
+        height: 15px;
     }
 }
