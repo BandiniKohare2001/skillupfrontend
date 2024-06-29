@@ -2,6 +2,7 @@
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
+  margin-top: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,8 @@
 .post-header {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
   padding: 8px;
 }
 
@@ -60,6 +63,8 @@
   }
   
   .post-feed {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for responsiveness */
+    display: flex;
+    flex-direction: column; /* Ensure cards stack vertically on smaller screens */
+    align-items: center; /* Center align cards horizontally */
   }
 }

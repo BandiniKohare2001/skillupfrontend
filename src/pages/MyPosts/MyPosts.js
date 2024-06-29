@@ -18,7 +18,7 @@ const posts = [
 const MyPosts = () => {
     return (
       <>
-      <div className='bg'>
+      <div className=''>
         <Navbar/>
         <section className='sec'>
         <div className="post-page profile-container">
