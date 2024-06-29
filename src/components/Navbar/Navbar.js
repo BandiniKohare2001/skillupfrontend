@@ -42,11 +42,7 @@ function Navbar() {
           <img src={logo} alt="logo" className="web-logo h-9 ms-2" />
           </div>
           <div className="search-container flex-grow mx-4 relative hidden md:block">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="search-input border rounded-lg px-3 py-2 w-full focus:outline-none focus:border-blue-500"
-            />
+          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
             <i className="fas fa-search search-icon absolute right-2 top-1/2 transform -translate-y-1/2"></i>
           </div>
           <div className="icons-containert flex items-evenly space-x-4 hidden md:flex">
