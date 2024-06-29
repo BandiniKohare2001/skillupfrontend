@@ -1,4 +1,3 @@
-// src/pages/Registration/Registration.js
 import React, { useState } from 'react';
 import "./Registration.css"
 import logo from "./../../utils/images/Logo.png"
@@ -10,7 +9,6 @@ const Registration = () => {
     mobile: '',
     username: '',
     password: '',
-   
   });
 
   const handleChange = (e) => {
@@ -30,10 +28,9 @@ const Registration = () => {
   return (
    <>
    <div className='pt-3 registration-page'>
-   <form onSubmit={handleSubmit} className='form px-5 py-4 '>
-  
-      <img src={logo} alt='logo' className='logo'/>
-      <h3 className="text-3xl font-semibold mb-4 reg-hea">Registration Form</h3>
+     <form onSubmit={handleSubmit} className='form px-5 py-4 '>
+        <img src={logo} alt='logo' className='logo'/>
+        <h3 className="text-3xl font-semibold mb-4 reg-hea">Registration Form</h3>
         <div className="mb-4">
           <label htmlFor="email" className="block mb-1">Email:</label>
           <input
@@ -82,9 +79,8 @@ const Registration = () => {
             required
           />
         </div>
-       
         <button type="submit" className="btn-reg bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Register</button>
-        <h6 className='pt-2'>If you have already registered ?  <Link to="/login" className='ms-1 fs-6'>Login</Link></h6>
+        <h6 className='pt-2'>If you have already registered? <Link to="/login" className='ms-1 fs-6'>Login</Link></h6>
       </form>
    </div>
    </>
