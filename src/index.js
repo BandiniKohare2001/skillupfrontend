@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Registration from './pages/Registration/Registration';
 import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
-import Notification from './pages/Notification/Notification';
+// import Notification from './pages/Notification/Notification';
 import Connections from './pages/Connections/Connections';
 import Message from './pages/Message/Message';
 import Profile from './pages/Profile/Profile';
@@ -17,7 +17,6 @@ import NotificationPage from './pages/Notification/NotificationPage';
 import Course from './TeacherPanel/Course/Course';
 import MyPosts from './pages/MyPosts/MyPosts';
 import DoubtPage from './pages/DoubtPage/DoubtPage';
-import GroupPage from './pages/GroupPage/GroupPage';
 import CourseDetails from './TeacherPanel/ViewCourse/CourseDetails';
 import StudentManagement from './TeacherPanel/StudentManagement/StudentManagement';
 import StudentPanel from './StudentPanel/StudentPanel';
@@ -69,10 +68,7 @@ const router = createBrowserRouter([
     path: "/doubtpage",
     element: <DoubtPage/>
   },
-  {
-    path: "/groups",
-    element: <GroupPage/>
-  },
+ 
   {
     path: "/viewcourse",
     element: <CourseDetails/>

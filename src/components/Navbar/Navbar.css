@@ -26,12 +26,9 @@
 
 .search-container {
   flex-grow: 1;
-  max-width: 400px;
+  margin-top: 10px;
+  max-width: 300px;
   position: relative;
-}
-.sideb{
-  /* background-color: aqua; */
-  /* margin-top: -50px; */
 }
 
 .search-input {
@@ -40,20 +37,21 @@
   border: none;
   height: 35px;
   font-size: 15px;
-  /* margin-left: 20px; */
   padding-right: 40px; /* Add padding to avoid overlap with the icon */
 }
 
 .search-icon {
   position: absolute;
-  right: 10px;
-  top: 30%;
+  right: 15px;
+  top: 40%;
   transform: translateY(-50%);
   color: #999;
 }
-.icons-container{
+
+.icons-container {
   display: none;
 }
+
 .icons-containert {
   display: flex;
   margin-left: 3%;
@@ -109,94 +107,51 @@
   padding-top: 70px; /* Add padding to prevent content overlap with fixed navbar */
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-section {
     flex-direction: row;
-    align-items: start;
+    /* align-items: start; */
+   
+    justify-content: flex-start;
   }
 
-  .search-container {
-    /* max-width: 100%; */
-    padding-right: -50px;
-  }
   .web-logo {
-    height: 45px;
-  margin-right: 100px;
-  padding-left: 10px;
-  margin-top: 3px;
-    width: 100%;
-  }
-  .menu-logo{
-    margin-left: -55px; 
-    margin-right: 40px;
-  }
-
-  .icons-container {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .icon-with-label.active {
-    border-bottom: 2px solid #050505; /* Added border-bottom for underline effect */
-  }
-
-  .icon-with-label {
-    flex-direction: column;
-    align-items: center;
-  }
-.search-input{
-/* padding-right: -100px; */
-}
-  .icon-label {
     display: none;
   }
 
-  .nav-main {
-    top: 0;
+  .menu-logo {
+    display: none;
   }
 
   .search-container {
     display: flex;
     justify-content: start;
+    width: 100% !important;
+    padding: 0 10px; /* Adjust padding to fit within the screen */
   }
-.search-icon{
-  padding-top: 15px;
-  right: 0%;
-  padding-right: -50px;
-}
+
+  .search-input {
+    width: 100% !important;
+    border-radius: 20px;
+    padding-left: 15px; /* Add some padding for better appearance */
+  }
+
+  .search-icon {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   .icons-container {
-    display: flex;
-   justify-content: space-evenly;
-    height: 60px;
-    border-top: 1px solid #eaeaea;
-    background-color: #fff;
-    position: fixed !important;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
+    display: none;
   }
 
-  .icon-with-label {
-    padding: 0;
-    margin: 0 10px;
-  }
-
-  .search-container {
-    /* margin: 10px 0; */
-    width: 100%;
+  .icons-containert {
+    display: none;
   }
 
   .get-premium {
     display: none;
   }
-  .icons-containert {
-    display: none;
-    align-items: center;
-  }
-  .search-icon{
-    padding-right: 20px;
-  }
-  
 }

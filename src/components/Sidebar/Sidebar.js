@@ -62,11 +62,7 @@ const Sidebar = () => {
                 <SchoolIcon className="icon" /> Course
               </Link>
             </li>
-            <li>
-              <Link to="/groups" className="sd-link">
-                <GroupIcon className="icon" /> Groups
-              </Link>
-            </li>
+           
             <li>
               <Link to="/doubtpage" className="sd-link">
                 <HelpOutlineIcon className="icon" /> Doubts

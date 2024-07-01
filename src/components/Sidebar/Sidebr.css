@@ -121,27 +121,6 @@
 
 @media screen and (max-width: 768px) {
   .sidebar {
-    width: 75%;
+    display: none;
   }
-
-  .navbar {
-    padding-left: 20px;
-  }
-
-  .menu-btn {
-    margin-right: 20px;
-  }
-}
-
-.sidebar-open .main-content {
-  margin-left: 17%;
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar-open .main-content {
-    margin-left: 75%;
-  }
-}
-.sidebr{
-  margin-top: 55px;
 }
