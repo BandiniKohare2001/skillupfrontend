@@ -5,7 +5,7 @@ import './PostCard.css';
 
 const PostCard = ({ post }) => {
   return (
-    <div className="post-card">
+    <div className="post-card mt-3">
       <div className="post-header">
         <img src={`https://i.pravatar.cc/50?u=${post.user}`} alt={`${post.user}'s avatar`} className="post-avatar" />
         <span className="post-user">{post.user}</span>

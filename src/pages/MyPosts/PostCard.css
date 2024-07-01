@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px; /* Adjust max-width as needed */
-  margin: 0 auto;
+  max-width: 450px; /* Adjust max-width as needed */
+  margin: 0 0;
 }
 
 .post-header {

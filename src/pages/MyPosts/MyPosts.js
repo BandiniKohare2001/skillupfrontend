@@ -18,14 +18,14 @@ const posts = [
 const MyPosts = () => {
     return (
       <>
-      <div className='bg margin'>
+      <div className=''>
         <Navbar/>
         <section className='sec'>
         <div className="post-page profile-container">
        
        <div className="post-feed">
          {posts.map((post) => (
-           <PostCard key={post.id} post={post} />
+           <PostCard key={post.id} post={post}  />
          ))}
        </div>
      </div>
