@@ -8,7 +8,7 @@ import Footer from '../../components/Footer/Footer'
 function Home() {
   return (
    <>
-    <div className='bg margin'>
+    <div className=' margin'>
      <div className='header-height'>
      <Navbar/>
       {/* <Sidebar/> */}
