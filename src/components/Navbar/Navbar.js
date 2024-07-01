@@ -28,9 +28,14 @@ function Navbar() {
   };
 
   const [activeNavItem, setActiveNavItem] = useState(getCurrentPath());
+  const [showSearch, setShowSearch] = useState(false);
 
   const handleNavItemClick = (item) => {
     setActiveNavItem(item);
+  };
+
+  const toggleSearch = () => {
+    setShowSearch(!showSearch);
   };
 
   return (
@@ -41,11 +46,11 @@ function Navbar() {
             <Sidebar />
             <img src={logo} alt="logo" className="web-logo h-9 ms-2" />
           </div>
-          <div className="search-container flex-grow mx-4 relative">
+          <div className={`search-container flex-grow ${showSearch ? 'show-search' : ''}`}>
             <input className="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" />
-            <i className="fas fa-search search-icon absolute right-2 top-1/2 transform -translate-y-1/2"></i>
+            <i className="fas fa-search search-icon absolute right-2 top-1/2 transform -translate-y-1/2" onClick={toggleSearch}></i>
           </div>
-          <div className="icons-containert flex items-evenly space-x-4">
+          <div className="icons-containert flex items-evenly space-x-4 hidden md:flex">
             <Link to="/">
               <div className={`icon-with-label ${activeNavItem === 'Home' ? 'active' : ''}`} onClick={() => handleNavItemClick('Home')}>
                 <HomeIcon className="nav-icon" />
@@ -81,6 +86,34 @@ function Navbar() {
               <span className="get-premium font-bold text-orange-600">Get Premium ✨</span>
             </Link>
           </div>
+        </div>
+
+        <div className="icons-container flex justify-around py-2 bg-white shadow-md fixed bottom-0 w-full md:hidden">
+          <Link to="/">
+            <div className={`icon-with-label ${activeNavItem === 'Home' ? 'active' : ''}`} onClick={() => handleNavItemClick('Home')}>
+              <HomeIcon className="nav-icon" />
+            </div>
+          </Link>
+          <Link to="/message">
+            <div className={`icon-with-label ${activeNavItem === 'Messaging' ? 'active' : ''}`} onClick={() => handleNavItemClick('Messaging')}>
+              <MailIcon className="nav-icon" />
+            </div>
+          </Link>
+          <Link to="/notification">
+            <div className={`icon-with-label ${activeNavItem === 'Notifications' ? 'active' : ''}`} onClick={() => handleNavItemClick('Notifications')}>
+              <NotificationIcon className="nav-icon" />
+            </div>
+          </Link>
+          <Link to="/connections">
+            <div className={`icon-with-label ${activeNavItem === 'Connections' ? 'active' : ''}`} onClick={() => handleNavItemClick('Connections')}>
+              <PeopleIcon className="nav-icon" />
+            </div>
+          </Link>
+          <Link to="/userprofile">
+            <div className={`icon-with-label ${activeNavItem === 'Profile' ? 'active' : ''}`} onClick={() => handleNavItemClick('Profile')}>
+              <AccountCircleIcon className="nav-icon" />
+            </div>
+          </Link>
         </div>
       </div>
     </>

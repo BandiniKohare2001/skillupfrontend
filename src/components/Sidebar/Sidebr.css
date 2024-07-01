@@ -1,9 +1,7 @@
 /* Sidebar.css */
-
 .logo-sidebar {
   height: 55px;
 }
-
 .navbar {
   /* margin-top: -3.5%; */
   z-index: 1000;
@@ -12,13 +10,11 @@
   margin-top: -55px;
   /* background-color: aqua; */
 }
-
 .sidebar-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-
 .sidebar {
   width: 20%;
   height: 100vh;
@@ -30,7 +26,6 @@
   z-index: 1000;
   transition: 0.5s;
 }
-
 .menu-btn {
   height: 20px;
   margin-right: 50px;
@@ -39,18 +34,15 @@
   position: fixed;
   margin-top: -5px;
 }
-
 .sidebar.active {
   left: 0;
 }
-
 .sd-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
 }
-
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -62,28 +54,23 @@
   visibility: hidden;
   z-index: 999;
 }
-
 .sidebar-overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
 .sd-body {
   padding: 15px;
   max-height: calc(100vh - 67px);
   overflow-y: auto;
 }
-
 .sd-body ul {
   width: 100%;
   padding: 0;
 }
-
 .sd-body ul li {
   list-style: none;
   margin-bottom: 8px;
 }
-
 .sd-body ul li .sd-link {
   display: flex;
   align-items: center;
@@ -94,23 +81,19 @@
   font-size: 17px;
   text-decoration: none;
 }
-
 .sd-body ul li .sd-link .icon {
   margin-right: 10px;
 }
-
 .close-btn {
   height: 20px;
   margin-top: -10px;
   font-size: 24px;
 }
-
 .sd-body ul li .sd-link:hover {
   background-color: #475f7b;
   color: white;
   
 }
-
 .logout {
   position: absolute;
   bottom: 20px;
@@ -121,6 +104,31 @@
 
 @media screen and (max-width: 768px) {
   .sidebar {
+    width: 75%;
     display: none;
   }
+  .sidebr{
+    display: none;
+  }
+
+  .navbar {
+    padding-left: 20px;
+  }
+
+  .menu-btn {
+    margin-right: 20px;
+  }
+}
+
+.sidebar-open .main-content {
+  margin-left: 17%;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-open .main-content {
+    margin-left: 75%;
+  }
+}
+.sidebr{
+  margin-top: 55px;
 }
