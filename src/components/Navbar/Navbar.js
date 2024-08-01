@@ -44,7 +44,7 @@ function Navbar() {
         <div className="nav-section flex items-center justify-between px-5 py-2 mx-auto max-w-screen-lg">
           <div className='d-flex menu-logo'>
             <Sidebar />
-            <img src={logo} alt="logo" className="web-logo h-9 ms-2" />
+            {/* <img src={logo} alt="logo" className="web-logo h-9 ms-2" /> */}
           </div>
           <div className={`search-container flex-grow ${showSearch ? 'show-search' : ''}`}>
             <input className="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" />
@@ -66,7 +66,7 @@ function Navbar() {
             <Link to="/notification">
               <div className={`icon-with-label ${activeNavItem === 'Notifications' ? 'active' : ''}`} onClick={() => handleNavItemClick('Notifications')}>
                 <NotificationIcon className="nav-icon" />
-                <span className="icon-label">Notifications</span>
+                <span className="icon-label">Notification</span>
               </div>
             </Link>
             <Link to="/connections">
@@ -83,12 +83,12 @@ function Navbar() {
             </Link>
             <div className='separator'></div>
             <Link to="/premium">
-              <span className="get-premium font-bold text-orange-600">Get Premium ✨</span>
+              <span className="get-premium">Get Premium ✨</span>
             </Link>
           </div>
         </div>
 
-        <div className="icons-container flex justify-around py-2 bg-white shadow-md fixed bottom-0 w-full md:hidden">
+        {/* <div className="icons-container flex justify-around py-2 bg-white shadow-md fixed bottom-0 w-full md:hidden">
           <Link to="/">
             <div className={`icon-with-label ${activeNavItem === 'Home' ? 'active' : ''}`} onClick={() => handleNavItemClick('Home')}>
               <HomeIcon className="nav-icon" />
@@ -114,7 +114,7 @@ function Navbar() {
               <AccountCircleIcon className="nav-icon" />
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -25,7 +25,7 @@ const Registration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://192.168.1.2/userdatapost.php', {
+      const response = await fetch('https://adarsh-playground.000webhostapp.com/skt/api/v1/usercreate.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

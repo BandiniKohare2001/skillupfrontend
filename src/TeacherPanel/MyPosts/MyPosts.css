@@ -18,6 +18,27 @@
   justify-content: flex-start;
   padding: 8px;
 }
+.side-content {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+ margin-left: 30px;
+ box-shadow: 1px 1px 3px 1px rgb(192, 191, 191);
+ margin-right: 80px;
+  position: fixed;
+  border-radius: 7px;
+  max-width:100%;
+}
+.Plus{
+  font-weight: bold;
+  /* font-size: 20px; */
+  width: 20px;
+  cursor: pointer;
+  max-height: 20px !important;
+  box-shadow: 1px 1px 5px 0.5px gray;
+  border-radius: 50%;
+}
 
 .post-avatar {
   width: 40px;

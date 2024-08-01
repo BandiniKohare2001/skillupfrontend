@@ -1,0 +1,48 @@
+.profile-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.post-card-container {
+  width: 90%; /* Adjust the width for responsiveness */
+  max-width: 600px; /* Set a maximum width */
+  margin: 30px auto; /* Center the container */
+}
+
+.post-box {
+  border-radius: 15px;
+  background-color: white;
+  border: 1.5px solid rgb(239, 237, 237);
+}
+
+.post-text {
+  font-size: 12px; /* Adjust font size for responsiveness */
+  color: rgb(132, 132, 132);
+}
+
+.post-img {
+  width: 100%;
+  height: auto; /* Ensure images maintain aspect ratio */
+}
+
+.hr-home {
+}
+
+.fs {
+  font-size: 14.5px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .post-card-container {
+      width: 100%; /* Take up full width on smaller screens */
+      padding: 0 20px; /* Add horizontal padding */
+  }
+}

@@ -8,7 +8,7 @@ const Posts = [
       profile:
         "https://media.istockphoto.com/id/1307615661/photo/smiling-indian-business-man-working-on-laptop-at-home-office-young-indian-student-or-remote.webp?b=1&s=612x612&w=0&k=20&c=vakiaULafyfDOTKfO8XQ8m7bIhQ4ml_meJs7yN3TVgE=",
       post: "Engineering Student",
-      postImg:"https://media.licdn.com/dms/image/sync/D4D10AQFxPcykRcioJw/image-shrink_800/0/1699906019616/AZRDIR_LI-DataAndAI-Blue-2B_IND_1200x1200_LIA_AZR-Direct_EN_Trial_Standard_SBAN_SINU_Illustration_Statement1png?e=1717480800&v=beta&t=htUc2fXedWwSJO2-0FwzM-Ib8sF4ftpAwZ98ikiV0FU"
+      postImg:"https://media.licdn.com/dms/image/D5622AQFnFIZR1qsKJw/feedshare-shrink_800/0/1721673342366?e=1724889600&v=beta&t=UoErvn-gbf3ogzPAqCnlWYwxDmDNM_bL-C1Dpe45EPw"
     },
     {
       id: 3,
@@ -17,7 +17,7 @@ const Posts = [
       profile:
         "https://images1.dnaindia.com/images/DNA-EN/900x1600/2023/11/17/1700200075758_a448am2ctinadabi625x30006July22.webp",
       post: "IAS Officer",
-      postImg:"https://media.licdn.com/dms/image/sync/D4D10AQFuzgTBlVZotA/image-shrink_800/0/1708611218211/1200x1200jpg?e=1717480800&v=beta&t=x9GMstIs2446mZaqmF6RRI9fnX0dlyvS4-RKBn9ZRDc"
+      postImg:"https://media.licdn.com/dms/image/D5622AQFEyO4EDhN0ww/feedshare-shrink_800/0/1721712077042?e=1724889600&v=beta&t=hPXemF8A4w6YGTZ7W9uAQr_31PtRCRdd4H-WCEw_das"
     },
     {
       id: 4,
@@ -26,7 +26,7 @@ const Posts = [
       profile:
         "https://qph.cf2.quoracdn.net/main-thumb-257533145-200-ilzhxguqmosbtyudklwpegmlxvbuidgx.jpeg",
       post: "Bank Clerk",
-      postImg:"https://media.licdn.com/dms/image/sync/D5610AQF5j4_AF0Gxfg/image-shrink_800/0/1716411358599?e=1717484400&v=beta&t=2hDHRsHrgUNvmXOVC-5D7w8NJfmbX4nRd_bUuwJYkQ0"
+      postImg:"https://media.licdn.com/dms/image/sync/D5610AQEAQz_hi6q2Ig/image-shrink_800/0/1721385238718/July-Webinarappsailv01jpg?e=1722322800&v=beta&t=c28KtaYmAwU7qArizaJbC00H-geZn9_bmMHiAXSXQrE"
     },
     {
       id: 5,
@@ -62,7 +62,7 @@ const Posts = [
       profile:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZmQbI9b6J480E0jgJkNtY42TRMeMR1-NC-2RjkOx0A&s",
       post: "Engineering Aspirant",
-      postImg:"https://media.licdn.com/dms/image/D5622AQEb00FAN_lqoA/feedshare-shrink_800/0/1716786646413?e=1720051200&v=beta&t=AGy6Jg3_Wu9Wl_bXRkHwDOfhDlv-212dH4_mFUfRCEQ"
+      postImg:"https://media.licdn.com/dms/image/D5622AQH0ctakaEcYtw/feedshare-shrink_800/0/1721565582178?e=1724889600&v=beta&t=nllsY90bbnCX4yKOF5h3QDEtceGfKVzstRUSBYOk9PE"
     },
   ];
   export default Posts;
